@@ -28,7 +28,7 @@ respostas = [
     ["Direita e esquerda", "Apenas esquerda", "Apenas direita", "Direita, esquerda e estacionário"],
     ["Verdadeiro", "Falso"],
     ["Verdadeiro", "Falso "], 
-    ["Que a máquina partirá de q1 e irá escrever 1", "Que a máquina partirá de q0 e irá escrever 0", "Que a máquina partirá do estado 0 e irá para o estado 1", "Que a máquina partirá de q0 lendo 0 e irá para q0, escrevendo 1 e realizando o movimento do cabeçote para a direção esquerda da fita"],
+    ["Que a máquina partirá de q1 e irá escrever 1", "Que a máquina partirá de q0 e irá escrever 0", "Que a máquina partirá do estado 0 e irá para o estado 1", "Que a máquina partirá de q0 lendo 0 e irá para q1, escrevendo 1 e realizando o movimento do cabeçote para a direção esquerda da fita"],
     ["Verdadeiro ", "Falso"]
 ]
 
@@ -37,8 +37,6 @@ alternativas = [2, 3, 0, 0, 0, 3, 1]
 st.header('Bem Vindo ao Nível Fácil 😊')
 
 lista = gerar_lista_aleatoria()
-
-acertos = 0
 
 for i in lista:
 
@@ -50,7 +48,6 @@ for i in lista:
     if(verificar):
 
         if respostas[i].index(resposta) == alternativas[i]:
-            acertos += 1
             st.success('Boa! Essa você acertou.')
         else:
             st.error(f'Que pena, essa você errou. A {alternativas[i]+1}ª alternativa era a correta.')
