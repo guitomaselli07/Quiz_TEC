@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 st.set_page_config(page_title='Quiz TEC', page_icon='🎯')
-st.sidebar.markdown('O objetivo deste jogo é promover os conhecimentos ensinados na disciplina de Teoria da Computação, lecionada pela professora Dra. Karina Roggia, durante o semestre 2023/1 na Universidade do Estado de Santa Catarina (UDESC - CCT). Desenvolvido por Guilherme Tomaselli Borchardt.')
+st.sidebar.markdown('O objetivo deste jogo é disseminar os conhecimentos ensinados na disciplina de Teoria da Computação, lecionada pela professora Dra. Karina Roggia, durante o semestre 2023/1 na Universidade do Estado de Santa Catarina (UDESC - CCT). Desenvolvido por Guilherme Tomaselli Borchardt.')
 st.sidebar.write("---")
 
 @st.cache_data(show_spinner=False, max_entries = 1)
@@ -14,11 +14,11 @@ def gerar_lista_aleatoria():
 
 perguntas = [
     "Pela definição do Sipser, uma Máquina de Turing é composta por quantos elementos?",
-    "Uma Máquina de Turing Multi-Fita possui mais poder computácional do que uma Máquina de Turing de fita única?",
+    "Uma Máquina de Turing multifita  possui mais poder computacional do que uma Máquina de Turing de fita única?",
     "Quais são os movimentos que o cabeçote pode realizar na fita durante o processamento de uma Máquina de Turing definida por Sipser?",
     "Toda linguagem decidível possui uma Máquina de Turing que a reconheça?",
-    "Se A é uma liguagem decidível qualquer. Então o complemento de A é reconhecível?",
-    "O que signinica δ(q0, 0) = (q1, 1, E)?", 
+    "Se A é uma linguagem decidível qualquer. Então o complemento de A é reconhecível?",
+    "O que significa δ(q0, 0) = (q1, 1, E)?", 
     "A fita de entrada e a fita da máquina são iguais?"
 ]
 
