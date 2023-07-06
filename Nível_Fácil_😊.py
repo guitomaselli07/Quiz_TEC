@@ -24,7 +24,7 @@ perguntas = [
 
 respostas = [
     ["5", "Infinitos", "7", "Pelo menos um"],
-    ["Sim", "Depende da quantidade de fitas", "Apenas se possuir mais do que 2 fitas", "Não"],
+    ["Sim", "Depende da quantidade de fitas", "Apenas se possuir mais do que duas fitas", "Não"],
     ["Direita e esquerda", "Apenas esquerda", "Apenas direita", "Direita, esquerda e estacionário"],
     ["Verdadeiro", "Falso"],
     ["Verdadeiro", "Falso "], 
