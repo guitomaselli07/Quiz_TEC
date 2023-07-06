@@ -8,29 +8,31 @@ st.sidebar.write("---")
 @st.cache_data(show_spinner=False)
 def gerar_lista_aleatoria():
 
-    lista = random.sample(range(0, 5), 5)
+    lista = random.sample(range(0, 7), 5)
     
     return lista
 
 perguntas = [
-    "Pela definição do Sipser, uma Máquina de Turing possui quantos elementos?",
-    "Uma Máquina de Turing Multi-Fita possui mais poder computácional do que uma Máquina de Turing convencionál?",
-    "Quais são os movimentos que o cabeçote pode realizar na fita durante o processamento de uma Máquina de Turing convencionál?",
-    "O que significa que uma linguagem é decidível?",
-    "Quem escreveu o livro 'Dom Quixote'?",
-    "Qual é a empresa mais valiosa do mundo?"
+    "Qual dos problemas a seguir não é um problema NP-Completo?",
+    "A respeito dos critérios de aceitação, rejeição e loop, qual é a alternativa correta?",
+    "Seja L1 uma linguagem decidível e sejam L2 e L3 linguagens reconhecíveis não decidíveis. Qual das afirmações a seguir não é necessariamente correta?",
+    "Suponha que a linguagem X pertença à classe NP-Completo, a liguagem Y pertence à classe NP e que X ≤ Y e Y ≤ X. Quais das alternativas a seguir está correta?",
+    "Existem linguagens decidíveis que possuem Máquina de Turing que eventualmente entre em loop?",
+    "Se M é uma Máquina de Turing que entra em loop infinito para algumas entradas, então L(M) não é decidível?", 
+    "Sobre o Problema da Parada, o que é correto afirmar?"
 ]
 
 respostas = [
-    ["5", "Infinitos", "7", "Quantos forem necessários"],
-    ["Sim", "Depende da quantidade de fitas", "Apenase se possuir mais do que 2 fitas", "Não"],
-    ["Direita e esquerda", "Apenas esquerda", "Apenas direita", "Direita, esquerda e estacionário"],
-    ["Yen", "Won", "Dólar", "Euro"],
-    ["Miguel de Cervantes", "Jorge Luis Borges", "Gabriel García Márquez", "Pablo Neruda"], 
-    ["Microsoft", "Google", "Apple", "Coca-Cola", "Adidas"]
+    ["Problema do ciclo hamiltoniano", "Problema do clique em grafos", "Problema da Correspondência de Post", "Nenhum dos problemas a cima"],
+    ["Uma Máquina de Turing não determinística não entra em loop infinito", "Se um ramo da Máquina de Turing não determinística tiver comprimento infinito, então essa máquina entrou em loop infinito", "Uma Máquina de Turing não determinística para somente se todos os ramos de computação possíveis para a entrada pararem", "Se uma Máquina de Turing não determinística que não aceita a palavra de entrada, então ela rejeita"],
+    ["L1 ∪ L2 é reconhecível", "L1 - L3 é reconhecível", "L2 - L1 é reconhecível", "L2 ∩ L1 é reconhecível"],
+    ["Y pertence à classe P", "Y pertence à classe NP-Completa", "Todas as alternativas anteriores", "Nenhuma das alternativas anteriores"],
+    ["Verdadeiro", "Falso"], 
+    ["Verdadeiro", "Falso "],
+    ["O problema da parada é decidível, o que significa que existe um algoritmo capaz de determinar se um programa irá parar ou não em uma entrada específica", "O problema da parada é indecidível, o que significa que não existe um algoritmo capaz de determinar se um programa irá parar ou não em uma entrada específica", "O problema da parada é resolvido através da aplicação de técnicas de otimização, que podem encontrar uma solução ótima para qualquer programa", "O problema da parada só ocorre em programas com erros de sintaxe ou semântica e pode ser corrigido através de depuração adequada"]
 ]
 
-alternativas = [2, 3, 0, 0, 0, 2]
+alternativas = [2, 2, 1, 1, 0, 1]
 
 st.header('Bem Vindo ao Nível Médio 😬')
 
