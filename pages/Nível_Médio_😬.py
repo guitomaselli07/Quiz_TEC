@@ -7,7 +7,7 @@ st.set_page_config(page_title='Quiz TEC', page_icon='🎯')
 st.sidebar.markdown('O objetivo deste jogo é promover os conhecimentos ensinados na disciplina de Teoria da Computação, lecionada pela professora Dra. Karina Roggia, durante o semestre 2023/1 na Universidade do Estado de Santa Catarina (UDESC - CCT). Desenvolvido por Guilherme Tomaselli Borchardt.')
 st.sidebar.write("---")
 
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False, max_entries = 1)
 def gerar_lista_aleatoria():
 
     lista = random.sample(range(0, 7), 5)
