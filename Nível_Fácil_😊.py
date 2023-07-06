@@ -8,29 +8,31 @@ st.sidebar.write("---")
 @st.cache_data(show_spinner=False)
 def gerar_lista_aleatoria():
 
-    lista = random.sample(range(0, 5), 5)
+    lista = random.sample(range(0, 7), 5)
     
     return lista
 
 perguntas = [
-    "Pela definição do Sipser, uma Máquina de Turing possui quantos elementos?",
-    "Uma Máquina de Turing Multi-Fita possui mais poder computácional do que uma Máquina de Turing convencionál?",
-    "Quais são os movimentos que o cabeçote pode realizar na fita durante o processamento de uma Máquina de Turing convencionál?",
-    "O que significa que uma linguagem é decidível?",
-    "Quem escreveu o livro 'Dom Quixote'?",
-    "Qual é a empresa mais valiosa do mundo?"
+    "Pela definição do Sipser, uma Máquina de Turing é composta por quantos elementos?",
+    "Uma Máquina de Turing Multi-Fita possui mais poder computácional do que uma Máquina de Turing de fita única?",
+    "Quais são os movimentos que o cabeçote pode realizar na fita durante o processamento de uma Máquina de Turing convencional?",
+    "Toda linguagem decidível possui uma Máquina de Turing que a reconheça?",
+    "Se A é uma liguagem decidível qualquer. Então o complemento de A é reconhecível?",
+    "O que signinica δ(q0, 0) = (q1, 1, E)?", 
+    "A fita de entrada e a fita da máquina são iguais?"
 ]
 
 respostas = [
-    ["5", "Infinitos", "7", "Quantos forem necessários"],
-    ["Sim", "Depende da quantidade de fitas", "Apenase se possuir mais do que 2 fitas", "Não"],
+    ["5", "Infinitos", "7", "Pelo menos um"],
+    ["Sim", "Depende da quantidade de fitas", "Apenas se possuir mais do que 2 fitas", "Não"],
     ["Direita e esquerda", "Apenas esquerda", "Apenas direita", "Direita, esquerda e estacionário"],
-    ["Yen", "Won", "Dólar", "Euro"],
-    ["Miguel de Cervantes", "Jorge Luis Borges", "Gabriel García Márquez", "Pablo Neruda"], 
-    ["Microsoft", "Google", "Apple", "Coca-Cola", "Adidas"]
+    ["Verdadeiro", "Falso"],
+    ["Verdadeiro", "Falso "], 
+    ["Que a máquina partirá de q1 e irá escrever 1", "Que a máquina partirá de q0 e irá escrever 0", "Que a máquina partirá do estado 0 e irá para o estado 1", "Que a máquina partirá de q0 lendo 0 e irá para q0, escrevendo 1 e realizando o movimento do cabeçote para a direção esquerda da fita"],
+    ["Verdadeiro ", "Falso"]
 ]
 
-alternativas = [2, 3, 0, 0, 0, 2]
+alternativas = [2, 3, 0, 0, 0, 3, 1]
 
 st.header('Bem Vindo ao Nível Fácil 😊')
 
