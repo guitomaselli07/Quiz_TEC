@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 st.set_page_config(page_title='Quiz TEC', page_icon='🎯')
-st.sidebar.markdown('O objetivo deste jogo é promover os conhecimentos ensinados na disciplina de Teoria da Computação, lecionada pela professora Dra. Karina Roggia, durante o semestre 2023/1 na Universidade do Estado de Santa Catarina (UDESC - CCT). Desenvolvido por Guilherme Tomaselli Borchardt.')
+st.sidebar.markdown('O objetivo deste jogo é disseminar os conhecimentos ensinados na disciplina de Teoria da Computação, lecionada pela professora Dra. Karina Roggia, durante o semestre 2023/1 na Universidade do Estado de Santa Catarina (UDESC - CCT). Desenvolvido por Guilherme Tomaselli Borchardt.')
 st.sidebar.write("---")
 
 @st.cache_data(show_spinner=False, max_entries = 1)
@@ -14,7 +14,7 @@ def gerar_lista_aleatoria():
 
 perguntas = [
     "Quais das seguintes informações são verdadeiras?\n1. O problema de determinar se existe um ciclo em um grafo direcionado pertence à classe P.\n2. O problema de determinar se existe um ciclo em um grafo direcionado pertence à classe NP.\n3. Se A ∈ NP-Completo, então existe um algoritmo não determinístico que roda em tempo polinomial e decide A.",
-    "Quais das seguintes linguagens são indecidíveis?\n1. {<G> | G é GLC e L(G) = Ø}\n2. {<G> | G é GLC e L(G) = ∑*}\n3. {<M> | M é MT e L(M) é liguagem regular}\n 4. {<A, N> | A é um AFD e N é um AFN e L(A) = L(N)}",
+    "Quais das seguintes linguagens são indecidíveis?\n1. {<G> | G é GLC e L(G) = Ø}\n2. {<G> | G é GLC e L(G) = ∑*}\n3. {<M> | M é MT e L(M) é linguagem regular}\n 4. {<A, N> | A é um AFD e N é um AFN e L(A) = L(N)}",
     "Quais das seguintes alternativas são falsas?\n1. Para qualquer Máquina de Turing não determinística, existe uma Máquina de Turing determinística equivalente\n2. Linguagens reconhecíveis são fechadas sobre as operações de união e complemento\n3. Linguagens decidíveis são fechadas para as operações de intersecção e complemento\n4. Linguagens reconhecíveis são fechadas sobre as operações de união e intersecção",
     "O que significa quando dizemos que um algoritmo P1 é assintoticamente mais eficiente do que o algoritmo P2?",
     "A é uma linguagem reconhecível se, e somente se, A ≤m Amt?",
