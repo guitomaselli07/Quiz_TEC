@@ -32,7 +32,7 @@ respostas = [
     ["O problema da parada é decidível, o que significa que existe um algoritmo capaz de determinar se um programa irá parar ou não em uma entrada específica", "O problema da parada é indecidível, o que significa que não existe um algoritmo capaz de determinar se um programa irá parar ou não em uma entrada específica", "O problema da parada é resolvido através da aplicação de técnicas de otimização, que podem encontrar uma solução ótima para qualquer programa", "O problema da parada só ocorre em programas com erros de sintaxe ou semântica e pode ser corrigido através de depuração adequada"]
 ]
 
-alternativas = [2, 2, 1, 1, 0, 1]
+alternativas = [2, 2, 1, 1, 0, 1, 1]
 
 st.header('Bem Vindo ao Nível Médio 😬')
 
