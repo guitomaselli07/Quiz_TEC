@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 st.set_page_config(page_title='Quiz TEC', page_icon='🎯')
-st.sidebar.markdown('O objetivo deste jogo é promover os conhecimentos ensinados na disciplina de Teoria da Computação, lecionada pela professora Dra. Karina Roggia, durante o semestre 2023/1 na Universidade do Estado de Santa Catarina (UDESC - CCT). Desenvolvido por Guilherme Tomaselli Borchardt.')
+st.sidebar.markdown('O objetivo deste jogo é disseminar os conhecimentos ensinados na disciplina de Teoria da Computação, lecionada pela professora Dra. Karina Roggia, durante o semestre 2023/1 na Universidade do Estado de Santa Catarina (UDESC - CCT). Desenvolvido por Guilherme Tomaselli Borchardt.')
 st.sidebar.write("---")
 
 @st.cache_data(show_spinner=False, max_entries = 1)
@@ -16,7 +16,7 @@ perguntas = [
     "Qual dos problemas a seguir não é um problema NP-Completo?",
     "A respeito dos critérios de aceitação, rejeição e loop, qual é a alternativa correta?",
     "Seja L1 uma linguagem decidível e sejam L2 e L3 linguagens reconhecíveis não decidíveis. Qual das afirmações a seguir não é necessariamente correta?",
-    "Suponha que a linguagem X pertença à classe NP-Completo, a liguagem Y pertence à classe NP e que X ≤ Y e Y ≤ X. Quais das alternativas a seguir está correta?",
+    "Suponha que a linguagem X pertença à classe NP-Completo, a linguagem Y pertence à classe NP e que X ≤ Y e Y ≤ X. Quais das alternativas a seguir está correta?",
     "Existem linguagens decidíveis que possuem Máquina de Turing que eventualmente entre em loop?",
     "Se M é uma Máquina de Turing que entra em loop infinito para algumas entradas, então L(M) não é decidível?", 
     "Sobre o Problema da Parada, o que é correto afirmar?"
