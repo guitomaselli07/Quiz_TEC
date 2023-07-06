@@ -8,7 +8,7 @@ st.sidebar.write("---")
 @st.cache_data(show_spinner=False, max_entries = 1)
 def gerar_lista_aleatoria():
 
-    lista = random.sample(range(0, 6), 5)
+    lista = random.sample(range(0, 7), 5)
     
     return lista
 
@@ -18,7 +18,8 @@ perguntas = [
     "Quais das seguintes alternativas são falsas?\n1. Para qualquer Máquina de Turing não determinística, existe uma Máquina de Turing determinística equivalente\n2. Linguagens reconhecíveis são fechadas sobre as operações de união e complemento\n3. Linguagens decidíveis são fechadas para as operações de intersecção e complemento\n4. Linguagens reconhecíveis são fechadas sobre as operações de união e intersecção",
     "O que significa quando dizemos que um algoritmo P1 é assintoticamente mais eficiente do que o algoritmo P2?",
     "A é uma linguagem reconhecível se, e somente se, A ≤m Amt?",
-    "Quais dos problemas a seguir são decidíveis?\n1. Dado programa P, P sempre produz uma saída?\n2. Se L é livre de contexto, então o complemento de L também é livre de contexto?\n3. Se L é regular, então o complemento de L também é regular?\n4. Se L é decidível, então o complemento de L também é decidível?"
+    "Quais dos problemas a seguir são decidíveis?\n1. Dado programa P, P sempre produz uma saída?\n2. Se L é livre de contexto, então o complemento de L também é livre de contexto?\n3. Se L é regular, então o complemento de L também é regular?\n4. Se L é decidível, então o complemento de L também é decidível?",
+    "Suponha que a linguagem X pertence à classe NP-Completo, a linguagem Y pertence a P e X ≤p Y. Qual das alternativas é a correta?"
 ]
 
 respostas = [
@@ -27,7 +28,8 @@ respostas = [
     ["Somente a número 2", "Somente a número 3", "Somente as de número 1 e 4", "Nenhuma"],
     ["P1 sempre será uma escolha melhor do que P2 para entradas pequenas", "P1 sempre será uma escolha melhor do que P2 para entradas grandes", "P2 sempre será uma escolha melhor do que P1 para entradas pequenas", "P1 sempre será uma escolha melhor do que P2, independente do tamanho da entrada"],
     ["Verdadeiro", "Falso"], 
-    ["2, 3 e 4", "1, 2, 3 e 4", "3 e 4", "1 e 2"]
+    ["2, 3 e 4", "1, 2, 3 e 4", "3 e 4", "1 e 2"],
+    ["X pertence à classe P", "Y pertence à classe NP-Completo", "P = NP", "Todas as alternativas anteriores"]
 ]
 
 alternativas = [0, 2, 0, 1, 0, 2]
