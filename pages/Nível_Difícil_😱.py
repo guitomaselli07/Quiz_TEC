@@ -8,29 +8,29 @@ st.sidebar.write("---")
 @st.cache_data(show_spinner=False)
 def gerar_lista_aleatoria():
 
-    lista = random.sample(range(0, 5), 5)
+    lista = random.sample(range(0, 6), 5)
     
     return lista
 
 perguntas = [
-    "Pela definição do Sipser, uma Máquina de Turing possui quantos elementos?",
-    "Uma Máquina de Turing Multi-Fita possui mais poder computácional do que uma Máquina de Turing convencionál?",
-    "Quais são os movimentos que o cabeçote pode realizar na fita durante o processamento de uma Máquina de Turing convencionál?",
-    "O que significa que uma linguagem é decidível?",
-    "Quem escreveu o livro 'Dom Quixote'?",
-    "Qual é a empresa mais valiosa do mundo?"
+    "Quais das seguintes informações são verdadeiras?\n1. O problema de determinar se existe um ciclo em um grafo direcionado pertence à classe P.\n2. O problema de determinar se existe um ciclo em um grafo direcionado pertence à classe NP.\n3. Se A ∈ NP-Completo, então existe um algoritmo não determinístico que roda em tempo polinomial e decide A.",
+    "Quais das seguintes linguagens são indecidíveis?\n1. {<G> | G é GLC e L(G) = Ø}\n2. {<G> | G é GLC e L(G) = ∑*}\n3. {<M> | M é MT e L(M) é liguagem regular}\n 4. {<A, N> | A é um AFD e N é um AFN e L(A) = L(N)}",
+    "Quais das seguintes alternativas são falsas?\n1. Para qualquer Máquina de Turing não determinística, existe uma Máquina de Turing determinística equivalente\n2. Linguagens reconhecíveis são fechadas sobre as operações de união e complemento\n3. Linguagens decidíveis são fechadas para as operações de intersecção e complemento\n4. Linguagens reconhecíveis são fechadas sobre as operações de união e intersecção",
+    "O que significa quando dizemos que um algoritmo P1 é assintoticamente mais eficiente do que o algoritmo P2?",
+    "A é uma linguagem reconhecível se, e somente se, A ≤m Amt?",
+    "Quais dos problemas a seguir são decidíveis?\n1. Dado programa P, P sempre produz uma saída?\n2. Se L é livre de contexto, então o complemento de L também é livre de contexto?\n3. Se L é regular, então o complemento de L também é regular?\n4. Se L é decidível, então o complemento de L também é decidível?"
 ]
 
 respostas = [
-    ["5", "Infinitos", "7", "Quantos forem necessários"],
-    ["Sim", "Depende da quantidade de fitas", "Apenase se possuir mais do que 2 fitas", "Não"],
-    ["Direita e esquerda", "Apenas esquerda", "Apenas direita", "Direita, esquerda e estacionário"],
-    ["Yen", "Won", "Dólar", "Euro"],
-    ["Miguel de Cervantes", "Jorge Luis Borges", "Gabriel García Márquez", "Pablo Neruda"], 
-    ["Microsoft", "Google", "Apple", "Coca-Cola", "Adidas"]
+    ["Todas", "Somente 1 e 3", "Somente 2 e 3", "Nenhuma"],
+    ["Somente a número 3", "Somente as de número 3 e 4", "Somente as de número 2 e 3", "Nenhuma"],
+    ["Somente a número 2", "Somente a número 3", "Somente as de número 1 e 4", "Nenhuma"],
+    ["P1 sempre será uma escolha melhor do que P2 para entradas pequenas", "P1 sempre será uma escolha melhor do que P2 para entradas grandes", "P2 sempre será uma escolha melhor do que P1 para entradas pequenas", "P1 sempre será uma escolha melhor do que P2, independente do tamanho da entrada"],
+    ["Verdadeiro", "Falso"], 
+    ["2, 3 e 4", "1, 2, 3 e 4", "3 e 4", "1 e 2"]
 ]
 
-alternativas = [2, 3, 0, 0, 0, 2]
+alternativas = [0, 2, 0, 1, 0, 2]
 
 st.header('Bem Vindo ao Nível Difícil 😱')
 
