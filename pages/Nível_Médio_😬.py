@@ -3,6 +3,8 @@ import random
 
 st.cache_data.clear()
 
+st.cache_data.clear()
+
 st.set_page_config(page_title='Quiz TEC', page_icon='🎯')
 st.sidebar.markdown('O objetivo deste jogo é promover os conhecimentos ensinados na disciplina de Teoria da Computação, lecionada pela professora Dra. Karina Rogia, durante o semestre 2023/1 na Universidade do Estado de Santa Catarina (UDESC - CCT). Desenvolvido por Guilherme Tomaselli Borchardt.')
 st.sidebar.write("---")
