@@ -38,8 +38,6 @@ st.header('Bem Vindo ao Nível Médio 😬')
 
 lista = gerar_lista_aleatoria()
 
-acertos = 0
-
 for i in lista:
 
     st.write("---")
@@ -50,7 +48,6 @@ for i in lista:
     if(verificar):
 
         if respostas[i].index(resposta) == alternativas[i]:
-            acertos += 1
             st.success('Boa! Essa você acertou.')
         else:
             st.error(f'Que pena, essa você errou. A {alternativas[i]+1}ª alternativa era a correta.')
