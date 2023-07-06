@@ -15,7 +15,7 @@ def gerar_lista_aleatoria():
 perguntas = [
     "Pela definição do Sipser, uma Máquina de Turing é composta por quantos elementos?",
     "Uma Máquina de Turing Multi-Fita possui mais poder computácional do que uma Máquina de Turing de fita única?",
-    "Quais são os movimentos que o cabeçote pode realizar na fita durante o processamento de uma Máquina de Turing convencional?",
+    "Quais são os movimentos que o cabeçote pode realizar na fita durante o processamento de uma Máquina de Turing definida por Sipser?",
     "Toda linguagem decidível possui uma Máquina de Turing que a reconheça?",
     "Se A é uma liguagem decidível qualquer. Então o complemento de A é reconhecível?",
     "O que signinica δ(q0, 0) = (q1, 1, E)?", 
