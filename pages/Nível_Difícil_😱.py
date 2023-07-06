@@ -32,7 +32,7 @@ respostas = [
     ["X pertence à classe P", "Y pertence à classe NP-Completo", "P = NP", "Todas as alternativas anteriores"]
 ]
 
-alternativas = [0, 2, 0, 1, 0, 2]
+alternativas = [0, 2, 0, 1, 0, 2, 3]
 
 st.header('Bem Vindo ao Nível Difícil 😱')
 
