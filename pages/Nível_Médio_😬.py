@@ -32,7 +32,7 @@ respostas = [
 
 alternativas = [2, 3, 0, 0, 0, 2]
 
-st.header('Bem Vindo ao Nível Fácil 😊')
+st.header('Bem Vindo ao Nível Médio 😬')
 
 lista = gerar_lista_aleatoria()
 
